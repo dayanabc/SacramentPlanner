@@ -28,8 +28,7 @@ namespace SacramentPlanner.Pages.Students
             }
 
             Student = await _context.Student
-                         .Include(s => s.Enrollments)
-                             .ThenInclude(e => e.Course)
+                         
                          .AsNoTracking()
                          .FirstOrDefaultAsync(m => m.ID == id);
 

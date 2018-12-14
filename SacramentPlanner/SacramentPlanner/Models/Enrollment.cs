@@ -13,7 +13,7 @@ namespace SacramentPlanner.Models
         public int EnrollmentID { get; set; }
         public int CourseID { get; set; }
         public int StudentID { get; set; }
-        [DisplayFormat(NullDisplayText = "No grade")]
+        [DisplayFormat(NullDisplayText = " ")]
         public Grade? Grade { get; set; }
 
         public Course Course { get; set; }
