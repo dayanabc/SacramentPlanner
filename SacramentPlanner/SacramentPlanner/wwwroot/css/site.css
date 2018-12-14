@@ -1,0 +1,92 @@
+/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification 
+for details on configuring this project to bundle and minify static web assets. */
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    color: blue;
+    background-color: white;
+}
+
+.body-content {
+    background-color: white;
+}
+
+.navbar-inverse .navbar-brand {
+    color: ;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    color:blue;
+    border-bottom: none;
+}
+
+a.navbar-brand {
+    border-bottom: none;
+    color: blue;
+}
+
+a {
+    color: blue;
+    border-bottom: solid;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+td, th {
+    padding: 5px;
+    vertical-align: top;
+}
+
+.btn-default {
+    color: ;
+}
+
+.row > div > h2, .row > div > p {
+    text-align: center;
+}
+
+.row > div > h2, .row > div > img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+}
+/* Wrapping element */
+/* Set some basic padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Carousel */
+.carousel-caption p {
+    font-size: 20px;
+    line-height: 1.4;
+}
+
+/* Make .svg files in the carousel display properly in older browsers */
+.carousel-inner .item img[src$=".svg"] {
+    width: 100%;
+}
+
+/* QR code generator */
+#qrCode {
+    margin: 15px;
+}
+
+.jumbotron h1, .jumbotron .h1 {
+    text-align: center;
+}
+
+.jumbotron {
+    background-color: ;
+}
+/* Hide/rearrange for smaller screens */
+@media screen and (max-width: 767px) {
+    /* Hide captions */
+    .carousel-caption {
+        display: none;
+    }
+}
