@@ -15,7 +15,7 @@
         <tr>
             <th>Last Name</th>
             <th>First Name</th>
-            <th>Calling Date</th>
+            <th>Ordained</th>
             <th>Office</th>
         </tr>
     </thead>
@@ -52,7 +52,7 @@
                     }
                 </td>
                 <td>
-                    <a asp-page="./Index" asp-route-id="@item.ID">Select</a> |
+                    
                     <a asp-page="./Edit" asp-route-id="@item.ID">Edit</a> |
                     <a asp-page="./Details" asp-route-id="@item.ID">Details</a> |
                     <a asp-page="./Delete" asp-route-id="@item.ID">Delete</a>
@@ -64,7 +64,7 @@
 
 @if (Model.Instructor.Courses != null)
 {
-    <h3>Courses Taught by Selected Instructor</h3>
+    <h3></h3>
     <table class="table">
         <tr>
             <th></th>
