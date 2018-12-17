@@ -1,5 +1,5 @@
 ﻿@page
-@model IndexModel
+@model SacramentPlanner.Pages.Students.IndexModel
 @{
     ViewData["Title"] = "Home page";
 }
@@ -9,10 +9,51 @@
 </div>
 <div class="row">
     <div class="col-md-4">
-        <p>For schedule <a class="btn btn-default" href="">
-            Click here. &raquo;</a></p>
-        <p>To create a schedule <a class="btn btn-default" href="">
-    Click here. &raquo;</a></p>
+
     </div>
-   
 </div>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Speakers</h2>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                <a asp-page="./Index" asp-route-sortOrder="@Model.NameSort"
+                   asp-route-currentFilter="@Model.CurrentFilter">
+                    @Html.DisplayNameFor(model => model.Student[0].LastName)
+                </a>
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Student[0].FirstMidName)
+            </th>
+            <th>
+                <a asp-page="./Index" asp-route-sortOrder="@Model.DateSort"
+                   asp-route-currentFilter="@Model.CurrentFilter">
+                    @Html.DisplayNameFor(model => model.Student[0].EnrollmentDate)
+                </a>
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.Student)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.LastName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FirstMidName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.EnrollmentDate)
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
