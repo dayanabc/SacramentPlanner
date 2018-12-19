@@ -3,20 +3,19 @@ for details on configuring this project to bundle and minify static web assets. 
 body {
     padding-top: 50px;
     padding-bottom: 20px;
-    color: blue;
-    background-color: white;
+    background-color: antiquewhite;
 }
 
 .body-content {
-    background-color: white;
+    background-color: antiquewhite;
 }
 
-.navbar-inverse .navbar-brand {
-    color: ;
+.navbar-inverse {
+    color: #3a7e95;
 }
 
 .navbar-inverse .navbar-nav > li > a {
-    color:blue;
+    color:papayawhip;
     border-bottom: none;
 }
 
@@ -40,7 +39,7 @@ td, th {
 }
 
 .btn-default {
-    color: ;
+ 
 }
 
 .row > div > h2, .row > div > p {
@@ -81,7 +80,8 @@ td, th {
 }
 
 .jumbotron {
-    background-color: ;
+    background-image: url(../images/oakland_Temple.jpg);
+    background-size:auto;
 }
 /* Hide/rearrange for smaller screens */
 @media screen and (max-width: 767px) {
